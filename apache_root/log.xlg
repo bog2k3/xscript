@@ -1,0 +1,44 @@
+[KERNEL: @thread:"Thread-3"] initializing kernel....
+[MEDIAMANAGER: @thread:"Thread-3"] initializing MediaManager...
+[MEDIAMANAGER: @thread:"Thread-3"] MediaManager initialized.
+[KERNEL: @thread:"Thread-3"] kernel initialization complete.
+[KERNEL: @thread:"kern"] kernel thread started...
+[XGUI: @thread:"MainApplet"] initializing XGUI...
+[XGUI: @thread:"MainApplet"] XGUI initialized.
+[AppLoader: @thread:"MainApplet"] Loading application "app_test.xs"...
+[AppLoader: @thread:"MainApplet"] !WARNING! (compiling) Script: http://localhost/app_test.xs, Line: 145 
+Function: wnd1MouseDown
+Empty code block detected.
+[AppLoader: @thread:"MainApplet"] !WARNING! (compiling) Script: http://localhost/app_test.xs, Line: 150 
+Function: wnd1MouseUp
+Empty code block detected.
+[AppLoader: @thread:"MainApplet"] Application loaded successfuly! :-)
+[XAPP: @thread:"canvas_test"] application thread started...
+[XAPP:info @thread:"canvas_test"] b = 3600
+[XGUI:info @thread:"canvas_test"] creating Window from xGUI.WindowDesc@1015a9e[startupPos:Default usrX:0 usrY:0 width:300 height:300 title:"please wait..."]...
+[XGUI:info @thread:"canvas_test"] Window created.
+[XGUI:info @thread:"canvas_test"] creating Window from xGUI.WindowDesc@17050f5[startupPos:Default usrX:0 usrY:0 width:600 height:230 title:"Dummy win to test focus"]...
+[XGUI:info @thread:"canvas_test"] Window created.
+[XAPP:!ERROR! @thread:"canvas_test"] Runtime error occured in script "canvas_test":
+Runtime error occured in script [canvas_test] at :
+XScripter.InstrMethodCall@e0f0ad
+initApp(object app)
+
+Error code : MethodInvokeFailed
+Error Message : Class : ListView; Method : addRecord
+No matching method found.
+=======================
+
+
+[XAPP:!ERROR! @thread:"canvas_test"] Runtime error occured in script "canvas_test":
+Runtime error occured in script [canvas_test] at :
+XScripter.InstrMethodCall@e0f0ad
+initApp(object app)
+
+Error code : MethodInvokeFailed
+Error Message : Class : ListView; Method : addRecord
+No matching method found.
+=======================
+
+
+[XAPP: @thread:"canvas_test"] application initialization FAILED. aborting...

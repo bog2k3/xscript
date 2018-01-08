@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<THEME name="Default" author="bogdan ionita">
+
+	<wallpaper image="wallpaper.jpg" />
+	<preview image="preview.jpg" />
+
+	<!-- This is the default font for controls. if a control does not specify it's own font
+	this one is used by default.
+	A control can override some specific font attributes like color or size or all of them at once -->
+	<font family="Arial" size="12" color="0x000000" bold="false" italic="false" />
+
+	<!-- this table defines default system colors -->
+	<systemColors
+		
+		desktop = "#C0B489"
+		activeTitleText = "#FFFFFF"
+		inactiveTitleText = "#DCCEB8"
+		window = "#D2CCC1"
+		editTextBackground = "#FFFFFF"
+		selection = "#F8BB86"
+		selectionUnfocused = "#DCCEB8"
+		textCaret = "#FF0000"
+		disabledShadeLight = "#D2CCC1"
+		disabledShadeMedium = "#928978"
+		disabledShadeDark = "#615749"
+		
+	/>
+
+	<window>
+		<!-- the minWidth and minHeight attributes specify how small a window can be resized -->
+		<layout minWidth="200" minHeight="40">
+			<!-- icon position -->
+			<icon X="10" Y="5" />
+			<!-- title text alignment and offset -->
+			<text alignX="left" offsetX="30" alignY="center" offsetY="0" />
+			<!-- border dimensions: -->
+			<border top="27" bottom="5" left="5" right="5" resize_edge="8" />
+			<!-- TODO add close/max/min buttonz -->
+		</layout>
+		
+		<!-- titlebar font: -->
+		<font bold="true" />
+		
+		<!-- on an element node, can use tile="true" attribute to make it tile instead of stretch -->
+		
+		<!-- active window skin: -->
+		<active>
+			<element name="titlebar_stretch" image="window/titlebar_stretch_a.png"/>
+			<element name="titlebar_left" image="window/titlebar_left_a.png" />
+			<element name="titlebar_right" image="window/titlebar_right_a.png" />
+			<element name="border_left" image="window/border_left_a.png" />
+			<element name="border_right" image="window/border_right_a.png" />
+			<element name="border_bottom" image="window/border_bottom_a.png" />
+			<element name="corner_left" image="window/corner_left_a.png" />
+			<element name="corner_right" image="window/corner_right_a.png" />
+
+			<font color="0x000000" />
+		</active>
+		
+		<!-- inactive window skin: -->
+		<inactive>
+			<element name="titlebar_stretch" image="window/titlebar_stretch_i.png"/>
+			<element name="titlebar_left" image="window/titlebar_left_i.png" />
+			<element name="titlebar_right" image="window/titlebar_right_i.png" />
+			<element name="border_left" image="window/border_left_i.png" />
+			<element name="border_right" image="window/border_right_i.png" />
+			<element name="border_bottom" image="window/border_bottom_i.png" />
+			<element name="corner_left" image="window/corner_left_i.png" />
+			<element name="corner_right" image="window/corner_right_i.png" />
+
+			<font color="0x808080" />
+		</inactive>
+	</window>
+
+	<button>
+		<layout minWidth="40" minHeight="20">
+			<text alignX="center" offsetX="0" alignY="center" offsetY="0"/>
+		</layout>
+		<!-- normal button state -->
+		<normal>
+			<element name="border_top" image="button/border_top_n.png" />
+			<element name="border_bottom" image="button/border_bottom_n.png" />
+			<element name="border_left" image="button/border_left_n.png" />
+			<element name="border_right" image="button/border_right_n.png" />
+			<element name="corner_topleft" image="button/corner_topleft_n.png" />
+			<element name="corner_topright" image="button/corner_topright_n.png" />
+			<element name="corner_bottomleft" image="button/corner_bottomleft_n.png" />
+			<element name="corner_bottomright" image="button/corner_bottomright_n.png" />
+			<element name="stretch" image="button/stretch_n.png" />
+		</normal>
+		<!-- on mouse over -->
+		<hover>
+			<element name="border_top" image="button/border_top_h.png" />
+			<element name="border_bottom" image="button/border_bottom_h.png" />
+			<element name="border_left" image="button/border_left_h.png" />
+			<element name="border_right" image="button/border_right_h.png" />
+			<element name="corner_topleft" image="button/corner_topleft_h.png" />
+			<element name="corner_topright" image="button/corner_topright_h.png" />
+			<element name="corner_bottomleft" image="button/corner_bottomleft_h.png" />
+			<element name="corner_bottomright" image="button/corner_bottomright_h.png" />
+			<element name="stretch" image="button/stretch_h.png" />
+		</hover>
+		<!-- on mouse pressed -->
+		<pressed>
+			<element name="border_top" image="button/border_top_p.png" />
+			<element name="border_bottom" image="button/border_bottom_p.png" />
+			<element name="border_left" image="button/border_left_p.png" />
+			<element name="border_right" image="button/border_right_p.png" />
+			<element name="corner_topleft" image="button/corner_topleft_p.png" />
+			<element name="corner_topright" image="button/corner_topright_p.png" />
+			<element name="corner_bottomleft" image="button/corner_bottomleft_p.png" />
+			<element name="corner_bottomright" image="button/corner_bottomright_p.png" />
+			<element name="stretch" image="button/stretch_p.png" />
+		</pressed>
+		<!-- disabled button -->
+		<disabled>
+			<font color="0x928978"/>
+			<element name="border_top" image="button/border_top_d.png" />
+			<element name="border_bottom" image="button/border_bottom_d.png" />
+			<element name="border_left" image="button/border_left_d.png" />
+			<element name="border_right" image="button/border_right_d.png" />
+			<element name="corner_topleft" image="button/corner_topleft_d.png" />
+			<element name="corner_topright" image="button/corner_topright_d.png" />
+			<element name="corner_bottomleft" image="button/corner_bottomleft_d.png" />
+			<element name="corner_bottomright" image="button/corner_bottomright_d.png" />
+			<element name="stretch" image="button/stretch_d.png" />
+		</disabled>
+	</button>
+
+	<textBox>
+		<layout minWidth="20" minHeight="23" />
+		
+		<!-- normal textBox skin -->
+		<normal>
+			<element name="border_top" image="textbox/border_top_n.png" />
+			<element name="border_bottom" image="textbox/border_bottom_n.png" />
+			<element name="border_left" image="textbox/border_left_n.png" />
+			<element name="border_right" image="textbox/border_right_n.png" />
+			<element name="corner_topleft" image="textbox/corner_topleft_n.png" />
+			<element name="corner_topright" image="textbox/corner_topright_n.png" />
+			<element name="corner_bottomleft" image="textbox/corner_bottomleft_n.png" />
+			<element name="corner_bottomright" image="textbox/corner_bottomright_n.png" />
+		</normal>
+		
+		<!-- optionally add [hover] skin, otherwise [normal] will be used -->
+		
+		<!-- focused textBox -->
+		<focused>
+			<element name="border_top" image="textbox/border_top_f.png" />
+			<element name="border_bottom" image="textbox/border_bottom_f.png" />
+			<element name="border_left" image="textbox/border_left_f.png" />
+			<element name="border_right" image="textbox/border_right_f.png" />
+			<element name="corner_topleft" image="textbox/corner_topleft_f.png" />
+			<element name="corner_topright" image="textbox/corner_topright_f.png" />
+			<element name="corner_bottomleft" image="textbox/corner_bottomleft_f.png" />
+			<element name="corner_bottomright" image="textbox/corner_bottomright_f.png" />
+		</focused>
+		
+		<!-- optionally add [focused_hover] skin, otherwise [focused] will be used -->
+		
+		<!-- disabled textBox -->
+		<disabled>
+			<font color="0xFF00FF" />
+			<element name="border_top" image="textbox/border_top_d.png" />
+			<element name="border_bottom" image="textbox/border_bottom_d.png" />
+			<element name="border_left" image="textbox/border_left_d.png" />
+			<element name="border_right" image="textbox/border_right_d.png" />
+			<element name="corner_topleft" image="textbox/corner_topleft_d.png" />
+			<element name="corner_topright" image="textbox/corner_topright_d.png" />
+			<element name="corner_bottomleft" image="textbox/corner_bottomleft_d.png" />
+			<element name="corner_bottomright" image="textbox/corner_bottomright_d.png" />
+		</disabled>
+	</textBox>
+
+	<checkBox>
+		<layout minWidth="20" minHeight="15">
+			<!-- this is the offset of the tick mark relative to the top-left corner of the box -->
+			<tick offsetX="3" offsetY="3" />
+			<!-- the text offsetX is relative to the right edge of the small box -->
+			<text offsetX="10"/>
+		</layout>
+		
+		<normal>
+			<element name="box" image="checkBox/normal.png"/>
+			<element name="tick" image="checkBox/tick_n.png"/>
+		</normal>
+		<hover>
+			<element name="box" image="checkBox/hover.png"/>
+			<element name="tick" image="checkBox/tick_h.png"/>
+		</hover>
+		<pressed>
+			<element name="box" image="checkBox/pressed.png"/>
+			<element name="tick" image="checkBox/tick_p.png"/>
+		</pressed>
+		<disabled>
+			<font color="0x928978" />
+			<element name="box" image="checkBox/disabled.png"/>
+			<element name="tick" image="checkBox/tick_d.png"/>
+		</disabled>
+	</checkBox>
+	
+</THEME>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="D:/bionita/Dropbox/work/java wks/apache_root/applet.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Main/default_export.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="false" exportOutputFolder="true">
+        <javaElement handleIdentifier="=Main"/>
+        <javaElement handleIdentifier="=XScripter"/>
+        <javaElement handleIdentifier="=xAPP"/>
+        <javaElement handleIdentifier="=kernel"/>
+        <javaElement handleIdentifier="=XGUI"/>
+    </selectedElements>
+</jardesc>
